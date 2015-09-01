@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SubViewController">
+            <connections>
+                <outlet property="ageTextField" destination="m75-J2-A8q" id="wR7-ip-Vyl"/>
+                <outlet property="firstNameTextField" destination="EDf-xE-gPK" id="Uql-WM-tvo"/>
+                <outlet property="lastNameTextField" destination="qJ2-sg-AhV" id="LFc-ny-86B"/>
+                <outlet property="positionTextField" destination="jWL-Zk-6N0" id="Wws-ah-YNT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add new employee" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6Y-p9-P7S">
+                    <rect key="frame" x="10" y="60" width="300" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tF-SZ-EZS">
+                    <rect key="frame" x="10" y="20" width="48" height="30"/>
+                    <state key="normal" title="Cancel">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelAdd:" destination="-1" eventType="touchUpInside" id="WbO-Xa-513"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EDf-xE-gPK" userLabel="firstName">
+                    <rect key="frame" x="10" y="101" width="300" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qJ2-sg-AhV" userLabel="lastName">
+                    <rect key="frame" x="10" y="141" width="300" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m75-J2-A8q" userLabel="age">
+                    <rect key="frame" x="10" y="181" width="300" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylY-nL-yIZ">
+                    <rect key="frame" x="10" y="261" width="300" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="Add">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="addEmployee:" destination="-1" eventType="touchUpInside" id="RGT-P0-UL0"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Position" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jWL-Zk-6N0" userLabel="position">
+                    <rect key="frame" x="10" y="221" width="300" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jWL-Zk-6N0" firstAttribute="top" secondItem="m75-J2-A8q" secondAttribute="bottom" constant="10" id="5wY-ZQ-xrZ"/>
+                <constraint firstItem="EDf-xE-gPK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="6EQ-kM-CPo"/>
+                <constraint firstItem="2tF-SZ-EZS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="BxM-5k-vab"/>
+                <constraint firstAttribute="trailing" secondItem="EDf-xE-gPK" secondAttribute="trailing" constant="10" id="Civ-v8-l3X"/>
+                <constraint firstItem="m75-J2-A8q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="FKI-IO-EHR"/>
+                <constraint firstItem="ylY-nL-yIZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="NEp-6A-ZDN"/>
+                <constraint firstAttribute="trailing" secondItem="m75-J2-A8q" secondAttribute="trailing" constant="10" id="aSb-ji-WcF"/>
+                <constraint firstItem="2tF-SZ-EZS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="aoY-C7-eoS"/>
+                <constraint firstAttribute="trailing" secondItem="qJ2-sg-AhV" secondAttribute="trailing" constant="10" id="asC-gh-vI8"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jWL-Zk-6N0" secondAttribute="trailing" constant="10" id="e2d-kt-Nnz"/>
+                <constraint firstItem="ylY-nL-yIZ" firstAttribute="top" secondItem="jWL-Zk-6N0" secondAttribute="bottom" constant="10" id="fBo-Rk-MaW"/>
+                <constraint firstItem="qJ2-sg-AhV" firstAttribute="top" secondItem="EDf-xE-gPK" secondAttribute="bottom" constant="10" id="fnN-jF-kR2"/>
+                <constraint firstItem="jWL-Zk-6N0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="j5o-nd-BXk"/>
+                <constraint firstItem="W6Y-p9-P7S" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="kgv-Zb-OFx"/>
+                <constraint firstAttribute="trailing" secondItem="jWL-Zk-6N0" secondAttribute="trailing" constant="10" id="lPM-5h-fms"/>
+                <constraint firstAttribute="trailing" secondItem="ylY-nL-yIZ" secondAttribute="trailing" constant="10" id="mgj-YX-0so"/>
+                <constraint firstItem="jWL-Zk-6N0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="nEC-Sn-HT5"/>
+                <constraint firstItem="W6Y-p9-P7S" firstAttribute="baseline" secondItem="2tF-SZ-EZS" secondAttribute="baseline" constant="36" id="ot5-at-sri"/>
+                <constraint firstAttribute="trailing" secondItem="W6Y-p9-P7S" secondAttribute="trailing" constant="10" id="qdB-Aa-oy9"/>
+                <constraint firstItem="EDf-xE-gPK" firstAttribute="top" secondItem="W6Y-p9-P7S" secondAttribute="bottom" constant="20" id="s2q-V4-yFW"/>
+                <constraint firstItem="m75-J2-A8q" firstAttribute="top" secondItem="qJ2-sg-AhV" secondAttribute="bottom" constant="10" id="tNZ-MS-HWx"/>
+                <constraint firstItem="qJ2-sg-AhV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="uXO-d9-ts7"/>
+            </constraints>
+            <point key="canvasLocation" x="272" y="260"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
