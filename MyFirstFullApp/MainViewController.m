@@ -69,7 +69,7 @@ NSMutableArray *employees;
         employees = [[NSMutableArray alloc] init];
         for (PFObject *queryData in employeesFromQuery) {
             Employee *employee = [[Employee alloc] init];
-            employee.objectId = queryData[@"objectId"];
+            employee.objectId = queryData.objectId;
             employee.firstName = queryData[@"firstName"];
             employee.lastName = queryData[@"lastName"];
             employee.age = queryData[@"age"];
